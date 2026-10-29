@@ -1,6 +1,9 @@
+def budget_status(total, budget):
+    if total < budget:
+        return "Within budget"
+    else:
+        return "Over budget"
 
-def agechecker(name, age):
-    return f"{name} is {age}"
 
-message = agechecker(19)
-print(message)
+status = budget_status(5000, 5000)
+print(status)
